@@ -7,4 +7,7 @@ Changing form data in the database will cause a different form to be generated e
 
 To run this project, install it locally using npm:
 
-1.cd /react/form-generator 2. npm install 3. npm start 4. repeat steps 2 and 3 but from the server folder
+1. cd /react/form-generator
+2. npm install
+3. npm start 
+4. repeat steps 2 and 3 but from the server folder
