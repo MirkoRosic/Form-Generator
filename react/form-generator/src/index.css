@@ -1,0 +1,149 @@
+:root {
+  --color-grey-1: #102a42;
+  --color-grey-2: #243a52;
+  --color-grey-3: #324d67;
+  --color-grey-4: #48647f;
+  --color-grey-5: #617d98;
+  --color-grey-6: #829ab0;
+  --color-grey-7: #9eb2c7;
+  --color-grey-8: #bcccdc;
+  --color-grey-9: #dae2ec;
+  --color-grey-10: #f1f5f8;
+
+  --color-red-dark: #bb2525;
+  --color-red-light: #e66b6b;
+  --color-green-dark: #25bb32;
+  --color-green-light: #6be675;
+  --color-black: #222;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--color-grey-1);
+  color: var(--color-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  background-color: white;
+  padding: 4rem 12rem;
+  border: 4px solid var(--color-grey-2);
+  border-radius: 50px;
+}
+
+h1 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+}
+
+p {
+  color: var(--color-green-10);
+  font-size: 1.25rem;
+  margin-right: 3rem;
+  padding: 2px 5px;
+  line-height: 1.25rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.25rem;
+  color: var(--color-grey-4);
+  line-height: 1.5rem;
+  padding: 2px 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+input,
+select {
+  border: 2px solid var(--color-grey-9);
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid var(--color-grey-1);
+  outline: transparent;
+}
+
+.radioContainer {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 0.3rem;
+}
+
+.radioContainer input,
+.radioContainer label {
+  margin-right: 1rem;
+}
+
+.radioContainer label {
+  line-height: 0;
+  padding: 2px;
+}
+
+.description {
+  margin-top: 1rem;
+  color: var(--color-grey-4);
+  text-transform: capitalize;
+}
+
+button {
+  font-size: 1.25rem;
+  color: var(--color-grey-1);
+  border: 2px solid var(--color-grey-1);
+  border-radius: 10px;
+  margin: 3rem 0 1rem;
+  padding: 8px 20px;
+  display: block;
+  transition: 0.3s all;
+}
+
+button:not([disabled]):hover {
+  background-color: var(--color-grey-3);
+  color: white;
+  border: 2px solid var(--color-black);
+}
+
+.error {
+  color: var(--color-red-light);
+}
+
+.modal {
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: var(--color-green-dark);
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.3;
+}
