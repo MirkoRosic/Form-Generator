@@ -9,5 +9,6 @@ To run this project, install it locally using npm:
 
 1. cd /react/form-generator
 2. npm install
-3. npm start 
-4. repeat steps 2 and 3 but from the server folder
+3. change DATABASE env variable to your Mongo database connection string
+4. npm start 
+5. repeat steps 2 and 3 but from the server folder
